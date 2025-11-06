@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { products } from '../../model/products'
+import { products } from '../../model/products.model'
 
 @Component({
   selector: 'app-shop',
@@ -16,9 +16,6 @@ export class ShopComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    this.productList = this.productList.map(p => ({
-      ...p
-    }))
   }
 
 }
